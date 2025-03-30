@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global container width adjustments */
+@media screen and (min-width: 768px) {
+  :root {
+    --container-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  :root {
+    --container-width: 1158px;
+    --container-padding: 15px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Header section for logo */
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 16px;
+  left: 98px; /* Відступ логотипа від краю */
+}
+
+.logo-img {
+  width: 150px;
+  height: auto;
+}
+
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1600px;
+  margin: auto;
+  flex-direction: row;
+  padding: 140px 98px 50px;
+}
+
+.hero-text {
+  max-width: 600px;
+  font-size: 98px;
+  text-align: left;
+  margin-top: 48px; /* Відступ між логотипом і текстом */
+  margin-left: 0px; /* Відступ тексту від краю */
+}
+
+.logo {
+  font-size: 92px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  display: inline-block;
+}
+
+.logo span {
+  font-size: 1.2em; /* Ще трохи збільшуємо тільки YU-MA */
+  color: #f16523;
+}
+
+.tagline {
+  color: #f16523;
+  margin: 20px 0;
+  font-size: 40px; /* Робимо текст на 40px меншим за логотип */
+  font-weight: normal; /* Звичайна товщина */
+}
+
+.menu-btn {
+  display: inline-block;
+  padding: 16px 48px;
+  background-color: #f16523;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+.phone {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 25px;
+  color: black;
+}
+
+.hero-image {
+  flex-shrink: 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+.pizza-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Tablet view */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .hero-text {
+    margin-left: 0;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 48px;
+  }
+
+  .tagline {
+    font-size: 24px;
+  }
+
+  .menu-btn {
+    font-size: 20px;
+    padding: 14px 28px;
+  }
+
+  .phone {
+    font-size: 26px;
+  }
+
+  .pizza-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.order-btn {
+  background-color: black;
+  color: #fff;
+  border-radius: 40px;
+  width: auto;
+  display: inline-block;
+  padding: 16px 48px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.container-content {
+  display: flex;
+  width: 100%;
+  margin-left: 98px;
+}
+
+.image-section {
+  flex: 0 0 70%; /* Зображення займає 70% ширини */
+  position: relative;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: column; /* Розміщує елементи вертикально */
+  gap: 48px; /* Відстань між елементами */
+  padding: 20px;
+  background-color: #f16523;
+}
+
+.title {
+  font-size: 78px;
+  margin: 0;
+  font-weight: 900;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.order-btn:hover {
+  background-color: #ff7a00;
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
