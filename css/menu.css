@@ -1,142 +1,134 @@
-.menu-container {
-    margin-top: 50px;
-    text-align: center;
-    padding: 20px;
-    clear: both;
-  }
-  
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 100px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  
-  .menu-item {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px; /* Збільшений розмір картки */
-    height: 350px; /* Збільшений розмір картки */
-    perspective: 1000px;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .menu-item:hover {
-    transform: scale(1.1); /* Картка збільшується при наведенні */
-  }
-  
-  .card {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-  }
-  
-  .card-front,
-  .card-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    background: white;
-  }
-  
-  .card-front img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  .card-back {
-    transform: rotateY(180deg);
-    background: #f8f8f8;
-    padding: 20px;
-  }
-  
-  .ingredients {
-    display: none; /* Інгредієнти спочатку приховані */
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    position: absolute;
-    width: 220px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 130%; /* Розміщення інгредієнтів під карткою */
-    text-align: center;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-  }
-  
-  .menu-item:hover .ingredients {
-    display: block;
-    opacity: 1;
-  }
-  
-  .arrow {
-    display: block;
-    font-size: 24px;
-    margin-top: 10px;
-    color: #f16523;
-  }
-  
-  .menu-buttons-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 192px;
-  }
-  
-  .button-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .button {
-    background-color: whitesmoke;
-    color: #f16523;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #f16523;
-    color: white;
-  }
-  
-  .order-button {
-    background-color: #f16523;
-    color: #fff;
-  }
-  
-  .order-button:hover {
-    background-color: white;
-    color: #f16523;
-  }
-  
+.menu-section {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #f16523;
+  margin-bottom: 40px;
+}
+
+.menu-grid,
+.menu-row {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 40px;
+}
+
+.menu-grid {
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  width: 200px;
+  text-align: center;
+  margin-bottom: 40px;
+  border: 1px solid #c5bfbf;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.menu-item h3 {
+  margin-bottom: 10px;
+}
+
+.menu-buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu-btn2 {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #f8f9fa;
+  color: black;
+  text-decoration: none;
+  border-radius: 40px;
+  font-size: 16px;
+  margin-top: 40px;
+  border: 1px solid #f16523;
+}
+
+.order-btn {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f16523;
+  color: white;
+  border-radius: 40px;
+  border: none;
+}
+
+.ingredients {
+  display: none;
+}
+
+.ingredients.active {
+  display: block;
+}
+
+.toggle-arrow {
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #f16523;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  margin: 10% auto;
+  width: 50%;
+  border-radius: 40px;
+  border: 2px solid #f16523;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  border: 2px solid #f16523;
+}
+
+button[type="submit"] {
+  background-color: #f16523;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+}
