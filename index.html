@@ -57,6 +57,7 @@
         </div>
       </section>
     </header>
+
     <div class="container-content container">
       <div class="image-section">
         <img src="images/people.png" alt="Tic-Tac-Toe Pizzerie" />
@@ -71,28 +72,27 @@
         <img src="images/hra.png" alt="hra" width="80" height="80" />
       </div>
     </div>
+
     <section class="menu-section">
-  <h1>Co nabízíme</h1>
-  <p class="subtitle">
-    Zvědavý? Zde jsou naše nejoblíbenější položky menu.
-  </p>
-  <div class="menu-grid">
-    <div class="menu-item">
-      <img src="./images/hero/pizza-hero.png" alt="Pizza Margarita" class="menu-img" />
-      <h3>MARGARITA</h3>
-      <div class="ingredients">
-        Rajčata, mozzarella, bazalka, olivový olej
-      </div>
-      <div class="toggle-arrow">&#x2193;</div>
-    </div>
-    <div class="menu-item">
-      <img src="./images/hero/pizza-hero.png" alt="Pizza Huita" class="menu-img" />
-      <h3>HUITA</h3>
-      <div class="ingredients">
-        Rajčata, mozzarella, bazalka, olivový olej
-      </div>
-      <div class="toggle-arrow">&#x2193;</div>
-    </div>
+      <h1>Co nabízíme</h1>
+      <p class="subtitle">
+        Zvědavý? Zde jsou naše nejoblíbenější položky menu.
+      </p>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img
+            src="./images/hero/pizza-hero.png"
+            alt="Pizza Margarita"
+            class="menu-img"
+          />
+          <h3>MARGARITA</h3>
+          <div class="ingredients">
+            Rajčata, mozzarella, bazalka, olivový olej
+          </div>
+          <div class="toggle-arrow">&#x2193;</div>
+        </div>
+
         <div class="menu-item">
           <img
             src="./images/hero/pizza-hero.png"
@@ -105,6 +105,20 @@
           </div>
           <div class="toggle-arrow">&#x2193;</div>
         </div>
+
+        <div class="menu-item">
+          <img
+            src="./images/hero/pizza-hero.png"
+            alt="Pizza Huita"
+            class="menu-img"
+          />
+          <h3>HUITA</h3>
+          <div class="ingredients">
+            Rajčata, mozzarella, bazalka, olivový olej
+          </div>
+          <div class="toggle-arrow">&#x2193;</div>
+        </div>
+
         <div class="menu-item">
           <img
             src="./images/hero/pizza-hero.png"
@@ -118,6 +132,7 @@
           <div class="toggle-arrow">&#x2193;</div>
         </div>
       </div>
+
       <div class="menu-row">
         <div class="menu-item">
           <img
@@ -131,6 +146,7 @@
           </div>
           <div class="toggle-arrow">&#x2193;</div>
         </div>
+
         <div class="menu-buttons-container">
           <button
             class="menu-btn2"
@@ -142,6 +158,7 @@
             OBJEDNAT ONLINE
           </button>
         </div>
+
         <div class="menu-item">
           <img
             src="./images/hero/pizza-hero.png"
@@ -156,6 +173,7 @@
         </div>
       </div>
     </section>
+
     <!-- Модальне вікно -->
     <div id="orderModal" class="modal">
       <div class="modal-content">
@@ -164,48 +182,59 @@
         <form id="orderForm">
           <div class="form-group">
             <label for="name">Jméno:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required />
           </div>
-          
+
           <div class="form-group">
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required />
           </div>
-          
+
           <div class="form-group">
             <label for="address">Adresa:</label>
-            <input type="text" id="address" name="address" required>
+            <input type="text" id="address" name="address" required />
           </div>
-          
+
           <div class="form-group">
             <label for="phone">Telefonní číslo:</label>
-            <input type="tel" id="phone" name="phone" pattern="\+420-[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="\+420-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              required
+            />
           </div>
-          
+
           <div class="form-group">
             <label for="time">Čas:</label>
             <select id="time" name="time" required>
               <script>
                 for (let i = 10; i < 22; i++) {
-                  document.write(`<option value="${i}:00-${i}:30">${i}:00-${i}:30</option>`);
-                  document.write(`<option value="${i}:30-${i + 1}:00">${i}:30-${i + 1}:00</option>`);
+                  document.write(
+                    `<option value="${i}:00-${i}:30">${i}:00-${i}:30</option>`
+                  );
+                  document.write(
+                    `<option value="${i}:30-${i + 1}:00">${i}:30-${
+                      i + 1
+                    }:00</option>`
+                  );
                 }
               </script>
             </select>
           </div>
-          
+
           <div class="form-group">
             <label for="pizza">Název pizzy:</label>
-            <input type="text" id="pizza" name="pizza" required>
+            <input type="text" id="pizza" name="pizza" required />
           </div>
-          
+
           <button type="submit">Odeslat objednávku</button>
         </form>
       </div>
     </div>
-        </form>
-      </div>
-    </div>
+
+    <!-- Скрипти краще додавати наприкінці body -->
     <script>
       function openModal() {
         document.getElementById("orderModal").style.display = "block";
@@ -215,36 +244,26 @@
         document.getElementById("orderModal").style.display = "none";
       }
 
-      function toggleIngredients(element) {
-        const ingredients = element.nextElementSibling;
-        ingredients.classList.toggle("active");
-        element.textContent = ingredients.classList.contains("active")
-          ? "▲"
-          : "▼";
-      }
-    </script>
-    <script>
+      // Коли DOM завантажився — підключаємо логіку розкриття інгредієнтів
       document.addEventListener("DOMContentLoaded", function () {
-  const menuItems = document.querySelectorAll(".menu-item");
+        const menuItems = document.querySelectorAll(".menu-item");
 
-  menuItems.forEach((item) => {
-    const arrow = item.querySelector(".toggle-arrow");
-    const ingredients = item.querySelector(".ingredients");
+        menuItems.forEach((item) => {
+          const arrow = item.querySelector(".toggle-arrow");
+          const ingredients = item.querySelector(".ingredients");
 
-    // Додаємо подію на клік
-    arrow.addEventListener("click", function () {
-      // Перемикання класу для інгредієнтів (відкриття / закриття)
-      ingredients.classList.toggle("active");
+          // Додаємо подію кліку на стрілку
+          arrow.addEventListener("click", function () {
+            ingredients.classList.toggle("active");
 
-      // Зміна стрілки в залежності від стану інгредієнтів
-      if (ingredients.classList.contains("active")) {
-        arrow.innerHTML = "&#x2191;"; // Стрілка вгору
-      } else {
-        arrow.innerHTML = "&#x2193;"; // Стрілка вниз
-      }
-    });
-  });
-});
+            if (ingredients.classList.contains("active")) {
+              arrow.innerHTML = "&#x2191;"; // Стрілка вгору
+            } else {
+              arrow.innerHTML = "&#x2193;"; // Стрілка вниз
+            }
+          });
+        });
+      });
     </script>
   </body>
 </html>

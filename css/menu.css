@@ -64,10 +64,12 @@
   border: none;
 }
 
+/* Інгредієнти спершу сховані */
 .ingredients {
   display: none;
 }
 
+/* Клас для показу інгредієнтів */
 .ingredients.active {
   display: block;
 }
