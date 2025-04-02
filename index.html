@@ -172,7 +172,134 @@
         </div>
       </div>
     </section>
+    <section class="menu-section">
+      <h1>Vyberte si pizzu podle chuti</h1>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img
+            src="./images/hero/pizza-hero.png"
+            alt="Pizza Margarita"
+            class="menu-img"
+          />
+          <h3>MARGARITA</h3>
+          <div class="ingredients">
+            Rajčata, mozzarella, bazalka, olivový olej
+          </div>
+          <div class="toggle-arrow">&#x2193;</div>
+        </div>
 
+        <div class="menu-item">
+          <img
+            src="./images/hero/pizza-hero.png"
+            alt="Pizza Huita"
+            class="menu-img"
+          />
+          <h3>Pizza se šunkou</h3>
+          <div class="ingredients">Rajčatová omáčka, mozzarella, šunka</div>
+          <div class="toggle-arrow">&#x2193;</div>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="./images/hero/pizza-hero.png"
+            alt="Pizza Huita"
+            class="menu-img"
+          />
+          <h3>Pizza Quattro Formaggi</h3>
+          <div class="ingredients">
+            Mozzarella, gorgonzola, parmazán, ricotta
+          </div>
+          <div class="toggle-arrow">&#x2193;</div>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="./images/hero/pizza-hero.png"
+            alt="Pizza Huita"
+            class="menu-img"
+          />
+          <h3>Caesar</h3>
+          <div class="ingredients">
+            Grilované kuře, Caesar dresink, římský salát, mozzarella, parmazán,
+            krutony
+          </div>
+          <div class="toggle-arrow">&#x2193;</div>
+        </div>
+      </div>
+
+      <div class="menu-row">
+        <div class="menu-item">
+          <img
+            src="./images/hero/pizza-hero.png"
+            alt="Pizza Margarita"
+            class="menu-img"
+          />
+          <h3>Pepperoni s jalapeňo</h3>
+          <div class="ingredients">
+            Rajčatová omáčka, mozzarella, pepperoni, papričky jalapeño
+          </div>
+          <div class="toggle-arrow">&#x2193;</div>
+        </div>
+
+        <div class="menu-buttons-container">
+          <button
+            class="menu-btn2"
+            onclick="window.location.href='https://yu-ma.cz#menu'"
+          >
+            ZOBRAZIT CELÉ MENU
+          </button>
+          <button class="order-btn" onclick="openModal()">
+            OBJEDNAT ONLINE
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="./images/hero/pizza-hero.png"
+            alt="Pizza Huita"
+            class="menu-img"
+          />
+          <h3>Carbonara</h3>
+          <div class="ingredients">
+            Smetanová omáčka, mozzarella, slanina, vejce, parmazán, černý pepř
+          </div>
+          <div class="toggle-arrow">&#x2193;</div>
+        </div>
+      </div>
+    </section>
+    <section class="other-items">
+      <h1 class="other-items__title">Něco jiného</h1>
+      <div class="other-items__list">
+        <div class="item-card">
+          <img
+            src="./images/Calzone.png"
+            alt="Calzone"
+            class="item-card__image"
+          />
+          <p class="item-card__name">CALZONE</p>
+          <span class="item-card__arrow">⌄</span>
+        </div>
+        <div class="item-card">
+          <img
+            src="./images/kuřecí křidýlka.png"
+            alt="Kuřecí křidýlka"
+            class="item-card__image"
+          />
+          <p class="item-card__name">KUŘECÍ KŘIDÝLKA</p>
+          <span class="item-card__arrow">⌄</span>
+        </div>
+        <div class="item-card">
+          <img
+            src="./images/Něco k pití.png"
+            alt="Něco k pití"
+            class="item-card__image"
+          />
+          <p class="item-card__name">NĚCO K PITÍ</p>
+          <span class="item-card__arrow">⌄</span>
+        </div>
+      </div>
+      <a href="https://yu-ma.cz#menu" class="menu-btn">zobrazit celé menu</a>
+    </section>
     <!-- Модальне вікно -->
     <div id="orderModal" class="modal">
       <div class="modal-content">
@@ -263,6 +390,13 @@
           });
         });
       });
+    </script>
+    <script>
+      document
+        .querySelector(".other-items__button")
+        .addEventListener("click", () => {
+          alert("Zobrazit celé menu – ця функція ще в розробці :)");
+        });
     </script>
   </body>
 </html>
