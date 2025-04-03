@@ -58,18 +58,10 @@
       </section>
     </header>
 
-    <div class="container-content container">
+    <div class="container">
       <div class="image-section">
         <img src="images/people.png" alt="Tic-Tac-Toe Pizzerie" />
-      </div>
-      <div class="content">
-        <h1 class="title">YU-MA</h1>
-        <p class="subtitle">
-          JEDINEČNÁ PIZZERIE, <br />
-          KTERÁ SPOJUJE CHUŤ A HRU.
-        </p>
         <button class="order-btn">OBJEDNAT PIZZU</button>
-        <img src="images/hra.png" alt="hra" width="80" height="80" />
       </div>
     </div>
 
@@ -153,7 +145,7 @@
           >
             ZOBRAZIT CELÉ MENU
           </button>
-          <button class="order-btn" onclick="openModal()">
+          <button class="order-btnm" onclick="openModal()">
             OBJEDNAT ONLINE
           </button>
         </div>
@@ -173,7 +165,7 @@
       </div>
     </section>
     <section class="menu-section">
-      <h1>Vyberte si pizzu podle chuti</h1>
+      <h1 class="other-items__title">Vyberte si pizzu podle chuti</h1>
       <div class="menu-grid">
         <div class="menu-item">
           <img
@@ -248,7 +240,7 @@
           >
             ZOBRAZIT CELÉ MENU
           </button>
-          <button class="order-btn" onclick="openModal()">
+          <button class="order-btnm" onclick="openModal()">
             OBJEDNAT ONLINE
           </button>
         </div>
@@ -277,7 +269,6 @@
             class="item-card__image"
           />
           <p class="item-card__name">CALZONE</p>
-          <span class="item-card__arrow">⌄</span>
         </div>
         <div class="item-card">
           <img
@@ -286,7 +277,6 @@
             class="item-card__image"
           />
           <p class="item-card__name">KUŘECÍ KŘIDÝLKA</p>
-          <span class="item-card__arrow">⌄</span>
         </div>
         <div class="item-card">
           <img
@@ -295,10 +285,11 @@
             class="item-card__image"
           />
           <p class="item-card__name">NĚCO K PITÍ</p>
-          <span class="item-card__arrow">⌄</span>
         </div>
       </div>
-      <a href="https://yu-ma.cz#menu" class="menu-btn">zobrazit celé menu</a>
+      <div class="menu-btn-wrapper">
+        <a href="https://yu-ma.cz#menu" class="menu-btn">zobrazit celé menu</a>
+      </div>
     </section>
     <!-- Модальне вікно -->
     <div id="orderModal" class="modal">

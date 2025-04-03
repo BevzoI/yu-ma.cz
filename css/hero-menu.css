@@ -40,6 +40,7 @@ body {
   font-size: 1.5rem;
   margin: 0;
   color: black;
+  margin-left: 1rem; /* Додає відступ між картинкою та текстом */
 }
 
 .pizza-ingredients {
@@ -91,7 +92,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #fff;
+  background-color: black;
   border-bottom: 2px solid #f16523;
   position: sticky;
   top: 0;
@@ -195,4 +196,166 @@ body {
 
 .order-form button:hover {
   background-color: black;
+}
+
+/* ===== Стилі для темної теми ===== */
+body.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+.menu-title {
+  color: #f16523;
+}
+
+/* Для зміни кольору назви піци в темній темі */
+body.dark-theme .pizza-name {
+  color: white; /* Назва піци буде білою в темній темі */
+}
+
+/* ===== Модальне вікно ===== */
+.image-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== Анімація хрестиків і ноликів на фоні ===== */
+@keyframes randomXandO {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Загальні стилі для хрестиків і ноликів */
+.random-xo {
+  position: absolute;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.1);
+  animation: randomXandO 5s infinite;
+  opacity: 1;
+}
+
+body::before {
+  content: "X";
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.1);
+  animation: randomXandO 5s infinite;
+}
+
+/* Для ноликів */
+body::after {
+  content: "O";
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.1);
+  animation: randomXandO 5s infinite;
+}
+
+.menu-title {
+  color: #f16523;
+}
+
+/* ===== Модальне вікно ===== */
+.image-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== Анімація хрестиків і ноликів на фоні ===== */
+@keyframes randomXandO {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Загальні стилі для хрестиків і ноликів */
+.random-xo {
+  position: absolute;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.1);
+  animation: randomXandO 5s infinite;
+  opacity: 1;
+}
+
+body::before {
+  content: "X";
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.1);
+  animation: randomXandO 5s infinite;
+}
+
+/* Для ноликів */
+body::after {
+  content: "O";
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.1);
+  animation: randomXandO 5s infinite;
+}
+
+.pizza-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Це зробить картинку круглою */
+  object-fit: cover; /* Обрізає картинку, щоб вона заповнювала круг */
 }

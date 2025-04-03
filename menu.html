@@ -24,6 +24,7 @@
         <button id="clear-cart" class="clear-cart">Vyprázdnit košík</button>
         <button id="order-button" class="order-button">Objednat</button>
       </div>
+      <button id="theme-toggle">🌙</button>
     </header>
 
     <div id="order-form" class="order-form">
@@ -31,22 +32,17 @@
       <form id="order-details-form">
         <label for="name">Jméno</label>
         <input type="text" id="name" name="name" required />
-
         <label for="phone">Telefonní číslo</label>
         <input type="tel" id="phone" name="phone" required />
-
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required />
-
         <label for="delivery-time">Čas doručení</label>
         <input type="time" id="delivery-time" name="delivery-time" required />
-
         <label for="payment-method">Způsob platby</label>
         <select id="payment-method" name="payment-method">
           <option value="card">Kreditní karta</option>
           <option value="cash">Hotovost</option>
         </select>
-
         <button type="submit">Odeslat objednávku</button>
       </form>
     </div>
@@ -240,6 +236,10 @@
         </li>
       </ul>
     </main>
+    <div id="image-modal" class="image-modal">
+      <span class="close-modal" id="close-modal">×</span>
+      <img id="modal-image" class="modal-image" />
+    </div>
     <script>
       const cart = [];
       const cartCount = document.getElementById("cart-count");
@@ -250,7 +250,13 @@
       const clearCartButton = document.getElementById("clear-cart");
       const orderForm = document.getElementById("order-form");
       const orderDetailsForm = document.getElementById("order-details-form");
+      const themeToggle = document.getElementById("theme-toggle");
 
+      const imageModal = document.getElementById("image-modal");
+      const modalImage = document.getElementById("modal-image");
+      const closeModal = document.getElementById("close-modal");
+
+      // Функція для оновлення кошика
       function updateCartDisplay() {
         cartItemsList.innerHTML = "";
         cart.forEach((item) => {
@@ -261,6 +267,7 @@
         cartCount.textContent = cart.length;
       }
 
+      // Додавання піци до кошика
       document.querySelectorAll(".cart-button").forEach((button) => {
         button.addEventListener("click", () => {
           const pizzaItem = button.closest(".pizza-item");
@@ -272,6 +279,7 @@
         });
       });
 
+      // Показ або приховування кошика
       cartToggle.addEventListener("click", () => {
         cartDropdown.style.display =
           cartDropdown.style.display === "block" ? "none" : "block";
@@ -324,6 +332,45 @@
         cartDropdown.style.display = "none";
         orderDetailsForm.reset();
       });
+
+      // Зміна теми
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-theme");
+      });
+
+      // Модальне вікно для картинки
+      document.querySelectorAll(".pizza-image").forEach((image) => {
+        image.addEventListener("click", () => {
+          modalImage.src = image.src;
+          imageModal.style.display = "block";
+        });
+      });
+
+      closeModal.addEventListener("click", () => {
+        imageModal.style.display = "none";
+      });
+    </script>
+    <script>
+      // Функція для створення випадкових символів "X" та "O" на фоні
+      function createRandomXandO() {
+        const body = document.body;
+
+        for (let i = 0; i < 50; i++) {
+          const xOrO = document.createElement("div");
+          xOrO.classList.add("random-xo");
+          xOrO.textContent = Math.random() > 0.5 ? "X" : "O"; // Випадково вибирає між X та O
+
+          // Встановлюємо випадкові позиції
+          xOrO.style.top = `${Math.random() * 100}vh`;
+          xOrO.style.left = `${Math.random() * 100}vw`;
+          xOrO.style.animationDuration = `${Math.random() * 5 + 5}s`; // Випадкова тривалість анімації
+
+          body.appendChild(xOrO);
+        }
+      }
+
+      // Викликаємо функцію для створення символів
+      createRandomXandO();
     </script>
   </body>
 </html>

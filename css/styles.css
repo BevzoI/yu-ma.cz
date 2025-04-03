@@ -20,7 +20,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff;
+  background-color: black;
 }
 
 .container {
@@ -101,7 +101,7 @@ header {
 }
 
 .tagline {
-  color: #f16523;
+  color: #fff;
   margin: 20px 0;
   font-size: 40px; /* Робимо текст на 40px меншим за логотип */
   font-weight: normal; /* Звичайна товщина */
@@ -121,7 +121,7 @@ header {
   font-size: 24px;
   font-weight: bold;
   margin-top: 25px;
-  color: black;
+  color: white;
 }
 
 .hero-image {
@@ -206,13 +206,29 @@ header {
   height: auto;
 }
 
-.content {
-  display: flex;
-  flex: 0 0 50%;
-  flex-direction: column; /* Розміщує елементи вертикально */
-  gap: 48px; /* Відстань між елементами */
-  padding: 20px;
-  background-color: #f16523;
+.image-section {
+  position: relative;
+  display: inline-block;
+}
+
+.image-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.order-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .title {
@@ -233,7 +249,7 @@ header {
 }
 
 img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
