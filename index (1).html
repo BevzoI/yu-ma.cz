@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs -->
+    <title>YU-MA p i z z a</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+<link rel="icon" href="./images/yuma/favicon.svg" type="image/x-icon">
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+<!-- Мобільний Хедер -->
+  <div class="mobile-header">
+    <div class="logo">
+      <a href="index.html"><img src="images/yuma/logo.svg" alt="Logo"></a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMobileMenu()">☰</div>
+<div class="cart-icon">
+  <a href="cart.html">
+    <img src="images/cart-icon.png" alt="Cart Icon" />
+    <span class="cart-count">1</span>
+  </a>
+</div>
+  </div>
+
+  <!-- Мобільне Меню -->
+  <div class="mobile-menu-panel" id="mobileMenu">
+    <div class="close-button" onclick="toggleMobileMenu()">×</div>
+    <a href="index.html">Domů</a>
+    <a href="shop-list.html">Pizza</a>
+    <a href="sushi.html">Sushi</a>
+    <a href="napoje.html">Nápoje</a>
+    <a href="neco-navic.html">Něco navíc</a>
+    <a href="novinky.html">Novinky</a>
+    <a href="pribeh.html">Naše příběh</a>
+    <a href="nas-tym.html">Náš tým</a>
+    <a href="hodnoty.html">Naše hodnoty</a>
+    <a href="contact-us.html">Kontakt</a>
+    <a href="cart.html">Košík</a>
+    
+  </div>
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-box">
+        <img src="images/preloader.svg" alt="preloader" />
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Start -->
+    <header>
+     
+      <div class="container-big">
+        <div class="header-inner">
+          <div class="row align-items-center">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-5">
+              <div class="header-logo">
+                <a href="index.html"
+                  ><img src="images/yuma/logo.svg" alt="Brand Logo"
+                /></a>
+              </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-9 col-7">
+              <div class="main-menu">
+                <div class="menu-toggle">
+                  <span></span>
+                </div>
+                <div class="menu-toggle">
+  <i class="fa fa-bars" style="font-size: 28px;"></i>
+</div>
+<div class="menu">
+                  <div class="sidemenu-header">
+                    <div class="sidemenu-logo">
+                      <img src="images/yuma/logo.svg" alt="Brand Logo" />
+                    </div>
+                    <div class="sidemenu-close">
+                      <span></span>
+                    </div>
+                  </div>
+                  <ul>
+                    <li class="active"><a href="index.html">Domů</a></li>
+                    <li>
+                      <span class="opener"></span>
+                      <a href="javascript:void(0)">Menu</a>
+                      <ul class="dropdown-content">
+                        <li><a href="shop-list.html">Pizza</a></li>
+						  <li><a href=sushi.html>Sushi</a></li>
+						  <li><a href="napoje.html">Nápoje</a></li>
+						  <li><a href="neco-navic.html">Něco navíc</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="opener"></span>
+                      <a href="javascript:void(0)">Novinky</a>
+                      <ul class="dropdown-content">
+                        <li><a href="novinky.html">Nové pizzy v nabídce</a></li>
+                        <li><a href="akce.html">Akční nabídky a slevy</a></li>
+                        <li><a href="our-team.html">Ze zákulisí pece</a></li>
+                        <li><a href="pizza-mesice.html">Pizza měsíce</a></li>
+                        <li><a href="hodnocení.html">Řekli jste o nás</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="opener"></span>
+                      <a href="javascript:void(0)">O nás</a>
+                      <ul class="dropdown-content">
+                        <li><a href="pribeh.html">Naše příběh</a></li>
+                        <li><a href="nas-tym.html">Náš tým</a></li>
+                        <li><a href="hodnoty.html">Naše hodnoty</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact-us.html">Kontakt</a>
+                  </ul>
+                </div>
+                <div class="icon-menu">
+                  <ul>
+                    <li class="search">
+                      <a href="javascript:void(0)">
+                        <img
+                          src="images/search-icon.png"
+                          class="normal-icon"
+                          alt="Search Icon"
+                        />
+                        <img
+                          src="images/search-icon-2.png"
+                          class="hover-icon"
+                          alt="Search Icon"
+                        />
+                      </a>
+                    </li>
+                    <li class="cart-slide position-r">
+                      <a href="cart.html">
+                        <img
+                          src="images/cart-icon.png"
+                          class="normal-icon"
+                          alt="Cart Icon"
+                        />
+                        <img
+                          src="images/cart-icon-2.png"
+                          class="hover-icon"
+                          alt="Cart Icon"
+                        />
+                        <span class="cart-count">0</span>
+                      </a>
+                    </li>                    
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Start Of Main Div -->
+    <main class="main">
+    <!-- Start Of Home Banner -->
+<section class="home-banner">
+  <div class="banner-wrapper">
+    <div class="home-left-content wow fadeInLeft">
+      <div class="home-banner-content">
+        <h1 class="home-banner-title">
+  YU-MA<br>
+  <span><a href="https://yu-ma.cz/shop-list.html" style="text-decoration: none; color: inherit;">pizza</a></span><br>
+  <span><a href="https://yu-ma.cz/sushi.html" style="text-decoration: none; color: inherit;">sushi</a></span>
+</h1>
+        <div class="home-banner-desc">
+          <p>„Hra začíná: X je pizza,<br>O je sushi. Co zvolíš?“</p>
+        </div>
+        <a href="shop-list.html" class="btn-ct btn-large">
+          <img src="images/cart-icon-white.png" alt="Cart Icon" /> objednat pizzu
+        </a>
+      </div>
+    </div>
+    <div class="image-content wow fadeInRight" data-wow-delay="0.5s">
+      <div class="circle-image-wrapper">
+        <img src="images/yuma/people.PNG" alt="pizza party" />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Of Home Banner -->
+
+
+      <!-- Start Of Daily Fresh -->
+      <section class="daily-fresh" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 40px; padding: 40px; box-sizing: border-box;">
+        <div class="fresh-img" style="flex: 1;">
+          <img src="images/yuma/krabička2.png" alt="Daily Fresh" style="width: 100%; height: auto; max-width: 600px;" />
+        </div>
+        <div class="fresh-content" style="flex: 1;">
+          <h3 class="title" style="font-size: 2rem; margin-bottom: 20px;">- Otevři hry chuti</h3>
+          <div class="fresh-des" style="font-size: 4rem;">
+            <p>„Tady začíná hra – X nebo O? Vyhrává ten, kdo si objedná!“</p>
+          </div>
+        </div>
+      </section>
+      <!-- End Of Daily Fresh -->
+
+      <!-- Start Of Our Menu -->
+<section class="our-menu position-r mb-150">
+  <div class="container">
+    <div class="menu-section">
+      <div class="menu-section-heading">
+        <h2>Naše pizzy</h2>
+        <p>Vyberte si z nejoblíbenějších pizz.</p>
+      </div>
+      <div class="menu-grid">
+        <!-- Margherita -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/yuma/pizza/Pizza Margherita-Photoroom.png" alt="Margherita">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Margherita</h3>
+            <p class="product-desc">Omáčka Pronto, Mozzarella, Bazalka</p>
+            <div class="product-bottom">
+              <span class="product-price">180 Kč</span>
+              <button class="add-to-cart btn-ct btn-small" data-name="Margherita" data-price="180">
+                <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Šunková pizza -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/yuma/pizza/Pizza se šunkou-Photoroom.png" alt="Šunková pizza">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Šunková pizza</h3>
+            <p class="product-desc">Sýr na pizzu, Omáčka Pronto, Šunka, Mozzarella</p>
+            <div class="product-bottom">
+              <span class="product-price">190 Kč</span>
+              <button class="add-to-cart btn-ct btn-small" data-name="Šunková" data-price="190">
+                <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pepperoni -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/yuma/pizza/Pizza Pepperoni-Photoroom.png" alt="Pepperoni">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Pepperoni</h3>
+            <p class="product-desc">Sýr na pizzu, Omáčka Pronto, Klobása chorizo, Mozzarella</p>
+            <div class="product-bottom">
+              <span class="product-price">210 Kč</span>
+              <button class="add-to-cart btn-ct btn-small" data-name="Pepperoni" data-price="210">
+                <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pepperoni Jalapeño -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/yuma/pizza/Pizza Pepperoni s jalapeňo-Photoroom.png" alt="Pepperoni Jalapeño">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Pepperoni Jalapeño</h3>
+            <p class="product-desc">Sýr na pizzu, Omáčka Pronto, Klobása chorizo, Jalapeño, Paprika</p>
+            <div class="product-bottom">
+              <span class="product-price">220 Kč</span>
+              <button class="add-to-cart btn-ct btn-small" data-name="Pepperoni" data-price="220">
+                <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carbonara -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/yuma/pizza/Carbonara-Photoroom.png" alt="Carbonara">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Carbonara</h3>
+            <p class="product-desc">Sýr na pizzu, Smetana, Pancetta, Parmazán, Vejce</p>
+            <div class="product-bottom">
+              <span class="product-price">220 Kč</span>
+              <button class="add-to-cart btn-ct btn-small" data-name="Carbonara" data-price="220">
+                <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tono -->
+<div class="product-card">
+  <div class="product-image">
+    <img src="images/yuma/pizza/Pizza s tuňákem-Photoroom.png" alt="Tono">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">Tono</h3>
+    <p class="product-desc">Sýr na pizzu, Tuňák v konzervě, Cibule, Olivy</p>
+    <div class="product-bottom">
+      <span class="product-price">220 Kč</span>
+      <button class="add-to-cart btn-ct btn-small" data-name="Tono" data-price="220">
+        <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Kolbásová vášeň -->
+<div class="product-card">
+  <div class="product-image">
+    <img src="images/yuma/pizza/Kolbásová vášeň (Mix)-Photoroom.png" alt="Kolbásová vášeň">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">Kolbásová vášeň</h3>
+    <p class="product-desc">Mix salámů a klobás: chorizo, pikantní, uzené, rajčatový základ, mozzarella</p>
+    <div class="product-bottom">
+      <span class="product-price">230 Kč</span>
+      <button class="add-to-cart btn-ct btn-small" data-name="Kolbásová vášeň" data-price="230">
+        <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Quattro Formaggi -->
+<div class="product-card">
+  <div class="product-image">
+    <img src="images/yuma/pizza/Pizza Quattro Formaggi-Photoroom.png" alt="Quattro Formaggi">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">Quattro Formaggi</h3>
+    <p class="product-desc">Sýr na pizzu, Čedar, Bazalka, Gorgonzola, Parmazán</p>
+    <div class="product-bottom">
+      <span class="product-price">240 Kč</span>
+      <button class="add-to-cart btn-ct btn-small" data-name="Quattro Formaggi" data-price="240">
+        <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Texas -->
+<div class="product-card">
+  <div class="product-image">
+    <img src="images/yuma/pizza/Pizza Texas-Photoroom.png" alt="Texas">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">Texas</h3>
+    <p class="product-desc">Sýr na pizzu, Grilované kuře, BBQ omáčka, Cibule, Slanina</p>
+    <div class="product-bottom">
+      <span class="product-price">240 Kč</span>
+      <button class="add-to-cart btn-ct btn-small" data-name="Texas" data-price="240">
+        <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Capricciosa -->
+<div class="product-card">
+  <div class="product-image">
+    <img src="images/yuma/pizza/Capricciosa-Photoroom.png" alt="Capricciosa">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">Capricciosa</h3>
+    <p class="product-desc">Sýr na pizzu, Omáčka Pronto, Šunka, Olivy, Žampiony, Artyčoky, Cherry rajčata</p>
+    <div class="product-bottom">
+      <span class="product-price">240 Kč</span>
+      <button class="add-to-cart btn-ct btn-small" data-name="Capricciosa" data-price="240">
+        <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Nizza -->
+<div class="product-card">
+  <div class="product-image">
+    <img src="images/yuma/pizza/Nicce-Photoroom.png" alt="Nizza">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">Nizza</h3>
+    <p class="product-desc">Sýr na pizzu, Tuňák, Cherry rajčata, Vejce, Olivy</p>
+    <div class="product-bottom">
+      <span class="product-price">240 Kč</span>
+      <button class="add-to-cart btn-ct btn-small" data-name="Nizza" data-price="240">
+        <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+      </button>
+    </div>
+  </div>
+</div>
+
+      <!-- Prosiuto di Parma + hruška a gorgonzola -->
+<div class="product-card">
+  <div class="product-image">
+    <img src="images/yuma/pizza/Prosciutto diParma-Photoroom.png" alt="Prosiuto di Parma + hruška a gorgonzola">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">Prosiuto di Parma + hruška a gorgonzola</h3>
+    <p class="product-desc">Sýr na pizzu, Prosciutto, Hruška, Gorgonzola, Vlašské ořechy</p>
+    <div class="product-bottom">
+      <span class="product-price">250 Kč</span>
+      <button class="add-to-cart btn-ct btn-small" data-name="Prosiuto" data-price="250">
+        <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Caesar -->
+<div class="product-card">
+  <div class="product-image">
+    <img src="images/yuma/pizza/Pizza Caesar-Photoroom.png" alt="Caesar">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">Caesar</h3>
+    <p class="product-desc">Grilované kuře, Caesar dresink, římský salát, mozzarella, parmazán, krutony</p>
+    <div class="product-bottom">
+      <span class="product-price">260 Kč</span>
+      <button class="add-to-cart btn-ct btn-small" data-name="Caesar" data-price="260">
+        <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Roastbeef -->
+<div class="product-card">
+  <div class="product-image">
+    <img src="images/yuma/pizza/Roastbeef-Photoroom.png" alt="Roastbeef">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">Roastbeef</h3>
+    <p class="product-desc">Sýr na pizzu, Roastbeef, Rukola, Parmazán, Česnekový dip</p>
+    <div class="product-bottom">
+      <span class="product-price">280 Kč</span>
+      <button class="add-to-cart btn-ct btn-small" data-name="Roastbeef" data-price="280">
+        <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Pizza s čerstvým tuňákem -->
+<div class="product-card">
+  <div class="product-image">
+    <img src="images/yuma/pizza/Pizza s čerstvým tuňákem (slice)-Photoroom.png" alt="S čerstvým tuňákem">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">S čerstvým tuňákem</h3>
+    <p class="product-desc">Sýr na pizzu, Smetana, čerstvý tuňák, pesto, parmazán, olivy</p>
+    <div class="product-bottom">
+      <span class="product-price">270 Kč</span>
+      <button class="add-to-cart btn-ct btn-small" data-name="S čerstvým tuňákem" data-price="270">
+        <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Frutti di Mare -->
+<div class="product-card">
+  <div class="product-image">
+    <img src="images/yuma/pizza/Pizza Frutti di Mare-Photoroom.png" alt="Frutti di Mare">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">Frutti di Mare</h3>
+    <p class="product-desc">Sýr na pizzu, Smetana, Mořské plody, Cherry rajčata, Rukola</p>
+    <div class="product-bottom">
+      <span class="product-price">280 Kč</span>
+      <button class="add-to-cart btn-ct btn-small" data-name="Frutti di Mare" data-price="280">
+        <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Royal black -->
+<div class="product-card">
+  <div class="product-image">
+    <img src="images/yuma/pizza/Royal black-Photoroom-Photoroom.png" alt="Royal black">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">Royal black</h3>
+    <p class="product-desc">Sýr na pizzu, Uzený losos, Červený kaviár, Černé těsto, Krémový základ</p>
+    <div class="product-bottom">
+      <span class="product-price">290 Kč</span>
+      <button class="add-to-cart btn-ct btn-small" data-name="Royal black" data-price="290">
+        <img src="images/cart-icon-white.png" alt="Cart Icon"> objednat
+      </button>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+            
+    
+          <div class="menu-section">
+            <div class="menu-section-heading">
+              <h2>Naše nápoje</h2>
+              <p>Osvěžte se ke každému kousku pizzy.</p>
+            </div>
+            <div class="menu-grid">
+              <div class="product-card"><div class="product-image"><img src="images/yuma/cola (2).png" alt="Coca-Cola"></div><div class="product-info"><h3 class="product-title">Coca-Cola</h3><p class="product-desc">0,33L</p><div class="product-bottom"><span class="product-price">39 Kč</span><button class="add-to-cart btn-ct btn-small" data-name="Coca-Cola" data-price="39"><img src="images/cart-icon-white.png" alt="Cart Icon"> objednat</button></div></div></div>
+              <div class="product-card"><div class="product-image"><img src="images/yuma/birell ovoc.png" alt="Birell Pomelo & Grep"></div><div class="product-info"><h3 class="product-title">Birell Pomelo & Grep</h3><p class="product-desc">0,5L</p><div class="product-bottom"><span class="product-price">39 Kč</span><button class="add-to-cart btn-ct btn-small" data-name="Birell Pomelo & Grep" data-price="39"><img src="images/cart-icon-white.png" alt="Cart Icon"> objednat</button></div></div></div>
+              <div class="product-card"><div class="product-image"><img src="images/yuma/fanta.png" alt="Fanta"></div><div class="product-info"><h3 class="product-title">Fanta</h3><p class="product-desc">0,33L</p><div class="product-bottom"><span class="product-price">39 Kč</span><button class="add-to-cart btn-ct btn-small" data-name="Fanta" data-price="39"><img src="images/cart-icon-white.png" alt="Cart Icon"> objednat</button></div></div></div>
+              <div class="product-card"><div class="product-image"><img src="images/yuma/matoni.png" alt="Mattoni Jemná"></div><div class="product-info"><h3 class="product-title">Mattoni Jemná</h3><p class="product-desc">0,5L</p><div class="product-bottom"><span class="product-price">30 Kč</span><button class="add-to-cart btn-ct btn-small" data-name="Mattoni Jemná" data-price="30"><img src="images/cart-icon-white.png" alt="Cart Icon"> objednat</button></div></div></div>
+              <div class="product-card"><div class="product-image"><img src="images/yuma/redbul.png" alt="Red Bull"></div><div class="product-info"><h3 class="product-title">Red Bull</h3><p class="product-desc">0,25L</p><div class="product-bottom"><span class="product-price">55 Kč</span><button class="add-to-cart btn-ct btn-small" data-name="Red Bull" data-price="55"><img src="images/cart-icon-white.png" alt="Cart Icon"> objednat</button></div></div></div>
+              <div class="product-card"><div class="product-image"><img src="images/yuma/zero.png" alt="Coca-Cola Zero"></div><div class="product-info"><h3 class="product-title">Coca-Cola Zero</h3><p class="product-desc">0,33L</p><div class="product-bottom"><span class="product-price">39 Kč</span><button class="add-to-cart btn-ct btn-small" data-name="Coca-Cola Zero" data-price="39"><img src="images/cart-icon-white.png" alt="Cart Icon"> objednat</button></div></div></div>
+              <div class="product-card"><div class="product-image"><img src="images/yuma/staropramen.png" alt="Staropramen 12"></div><div class="product-info"><h3 class="product-title">Staropramen 12</h3><p class="product-desc">0,5L</p><div class="product-bottom"><span class="product-price">45 Kč</span><button class="add-to-cart btn-ct btn-small" data-name="Staropramen 12" data-price="45"><img src="images/cart-icon-white.png" alt="Cart Icon"> objednat</button></div></div></div>
+              <div class="product-card"><div class="product-image"><img src="images/yuma/svijany.png" alt="Svijany Máž"></div><div class="product-info"><h3 class="product-title">Svijany Máž</h3><p class="product-desc">0,5L</p><div class="product-bottom"><span class="product-price">45 Kč</span><button class="add-to-cart btn-ct btn-small" data-name="Svijany Máž" data-price="45"><img src="images/cart-icon-white.png" alt="Cart Icon"> objednat</button></div></div></div>
+            </div>
+          </div>
+    
+        </div>
+      </section>
+      <!-- End Of Our Menu -->
+
+    
+      <!-- Start Of Our Strength -->
+      <section
+        class="our-strength position-r pt-150 pb-120 mb-150 bg-yellow overflow-h"
+      >
+        <div class="strength-vacter wow fadeInRight animation-delay-5">
+          <img src="images/strength-vacter.png" alt="Vacter Image" />
+        </div>
+        <div class="container">
+          <div class="section-heading wow fadeInUp">
+            <h5 class="sub-title"> Naše silné stránky</h5>
+            <h4>Proč jsme ti nejlepší?</h4>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-6 strength-box wow fadeInUp">
+              <div class="strength-icon">
+                <img
+                  src="images/all-kinds-of-foods.png"
+                  alt="All kinds of Foods"
+                />
+              </div>
+              <div class="strength-content">
+                <h4 class="strength-title">Všechny druhy jídel</h4>
+                <p><span class="white">„Máme širokou nabídku – od klasické pizzy až po originální speciality. U nás si vybere každý.“</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 strength-box wow fadeInUp">
+              <div class="strength-icon">
+                <img src="images/fresh-foods.png" alt="Fresh Foods" />
+              </div>
+              <div class="strength-content">
+                <h4 class="strength-title">Čerstvé suroviny</h4>
+                <p><span class="white">„Používáme jen kvalitní a čerstvé suroviny. Každé sousto chutná jako z pravé italské kuchyně.“</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 strength-box wow fadeInUp">
+              <div class="strength-icon">
+                <img src="images/best-taste.png" alt="Best Taste" />
+              </div>
+              <div class="strength-content">
+                <h4 class="strength-title">Nejlepší chuť</h4>
+                <p><span class="white">„Receptury, které jsme ladili s láskou. Pochutnáš si u nás jako nikde jinde.“
+                </span></p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 strength-box wow fadeInUp">
+              <div class="strength-icon">
+                <img src="images/on-time-delivery.png" alt="On Time Delivery" />
+              </div>
+              <div class="strength-content">
+                <h4 class="strength-title">Včasné doručení</h4>
+                <p><span class="white">„Rychle, spolehlivě a s úsměvem. Tvůj hlad nečeká – a my to víme!“</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Of Our Strength -->
+
+      <!-- Start Of Feedback Part -->
+      <section class="feeddback-part position-r mb-150 overflow-h">
+        <div class="feeddback-vacter wow fadeInLeft animation-delay-5">
+          <img src="images/leaf.png" alt="Vacter Image" />
+        </div>
+        <div class="container">
+          <div class="section-heading wow fadeInUp">
+            <h5 class="sub-title">Zpětná vazba zákazníků</h5>
+            <h2>Co o nás říkají naši zákazníci</h2>
+          </div>
+
+          <div class="testimonials-slider owl-carousel wow fadeInUp">
+            <div class="testimonial-box">
+              <div class="client-image">
+                <img src="images/yuma/women.jpg" alt="Johan Doe" />
+              </div>
+              <div class="client-info">
+                <div class="client-name">Petra K.</div>
+                <div class="client-desc">
+                  <p>
+                    „Nejlepší pizza ve městě! Těsto je perfektní a suroviny opravdu čerstvé. Objednávám pravidelně.“
+                  </p>
+                </div>
+                <div class="testimonial-rating">
+                  <ul>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-box">
+              <div class="client-image">
+                <img src="images/yuma/depositphotos_220729086-stock-photo-smiling-handsome-adult-man-looking.jpg" alt="Alex Saanu" />
+              </div>
+              <div class="client-info">
+                <div class="client-name">Martin D.</div>
+                <div class="client-desc">
+                  <p>
+                    „Rychlé doručení, skvělá chuť a milý personál. Určitě doporučuji všem milovníkům pizzy!“
+                  </p>
+                </div>
+                <div class="testimonial-rating">
+                  <ul>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-box">
+              <div class="client-image">
+                <img src="images/yuma/istockphoto-1326417862-612x612.jpg" alt="Jona Leoner" />
+              </div>
+              <div class="client-info">
+                <div class="client-name">Lucie M.</div>
+                <div class="client-desc">
+                  <p>
+                    „Pizza byla výborná, jen bych uvítala víc sýra. Jinak super zážitek a krásné balení.“
+                  </p>
+                </div>
+                <div class="testimonial-rating">
+                  <ul>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-box">
+              <div class="client-image">
+                <img src="images/yuma/manjpg.jpg" alt="Takar Bowa" />
+              </div>
+              <div class="client-info">
+                <div class="client-name">Tomáš V.</div>
+                <div class="client-desc">
+                  <p>
+                    „Objednal jsem poprvé a byl jsem mile překvapen. Chuť Itálie doma na gauči!“
+                  </p>
+                </div>
+                <div class="testimonial-rating">
+                  <ul>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-box">
+              <div class="client-image">
+                <img src="images/yuma/women2.jpg" alt="Eva" />
+              </div>
+              <div class="client-info">
+                <div class="client-name">Eva N.</div>
+                <div class="client-desc">
+                  <p>
+					„Děti si pizzu z YU-MA zamilovaly. A mě potěšilo, že dorazila teplá a načas.“
+                  </p>
+                </div>
+                <div class="testimonial-rating">
+                  <ul>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-box">
+              <div class="client-image">
+                <img src="images/yuma/images (3).jpg" alt="Takar Bowa" />
+              </div>
+              <div class="client-info">
+                <div class="client-name">Andrea Š.</div>
+                <div class="client-desc">
+                  <p>
+                    „Skvělá obsluha, příjemné prostředí a ta pizza? Božská! Určitě přijdeme znovu.“
+                  </p>
+                </div>
+                <div class="testimonial-rating">
+                  <ul>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Of Feedback Part -->
+
+      <!-- Start Of Reservation Part -->
+      <section
+        class="reservation-part left-padding mb-150 position-r overflow-h"
+      >
+        <div class="row align-items-center">
+          <div class="col-xl-5 col-lg-6 col-md-12">
+            <div class="section-heading section-heading-left wow fadeInLeft">
+              <h5 class="sub-title">Rychlá Objednávka</h5>
+              <h2>Objednej si svou pizzu hned teď!</h2>
+            </div>
+            <div id="form-message" style="display: none; margin-bottom: 15px; padding: 10px; border-radius: 8px; font-weight: bold;"></div>
+            <form class="book-form md-mb-40 wow fadeInLeft" action="" method="POST">
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="customer_name"
+                      class="form-control"
+                      placeholder="Jméno*"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name="customer_email"
+                      class="form-control"
+                      placeholder="E-mail*"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="tel"
+                      name="customer_phone"
+                      class="form-control"
+                      placeholder="Telefon*"
+                      required
+                    />
+                  </div>
+                </div>
+            
+<!-- Випадаючий список з піцами -->
+<div class="col-xl-6 col-lg-6 col-md-6">
+  <div class="form-group">
+    <select name="pizza" class="form-control" required>
+      <option value="">Vyberte pizzu*</option>
+      <option value="Margherita - 180 Kč">Margherita - 180 Kč</option>
+      <option value="Šunková pizza - 190 Kč">Šunková pizza - 190 Kč</option>
+      <option value="Pepperoni - 210 Kč">Pepperoni - 210 Kč</option>
+      <option value="Pepperoni Jalapeño - 220 Kč">Pepperoni Jalapeño - 220 Kč</option>
+      <option value="Carbonara - 220 Kč">Carbonara - 220 Kč</option>
+      <option value="Tono - 220 Kč">Tono - 220 Kč</option>
+      <option value="Kolbásová vášeň - 230 Kč">Kolbásová vášeň - 230 Kč</option>
+      <option value="Quattro Formaggi - 240 Kč">Quattro Formaggi - 240 Kč</option>
+      <option value="Texas - 240 Kč">Texas - 240 Kč</option>
+      <option value="Capricciosa - 240 Kč">Capricciosa - 240 Kč</option>
+      <option value="Nizza - 240 Kč">Nizza - 240 Kč</option>
+      <option value="Prosiuto di Parma + hruška a gorgonzola - 250 Kč">Prosiuto di Parma + hruška a gorgonzola - 250 Kč</option>
+      <option value="Caesar - 260 Kč">Caesar - 260 Kč</option>
+      <option value="S čerstvým tuňákem - 270 Kč">S čerstvým tuňákem - 270 Kč</option>
+      <option value="Roastbeef - 280 Kč">Roastbeef - 280 Kč</option>
+      <option value="Frutti di Mare - 280 Kč">Frutti di Mare - 280 Kč</option>
+      <option value="Royal black - 290 Kč">Royal black - 290 Kč</option>
+    </select>
+  </div>
+</div>
+            
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      name="quantity"
+                      class="form-control"
+                      placeholder="Počet kusů*"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="customer_address"
+                      class="form-control"
+                      placeholder="Adresa doručení*"
+                      required
+                    />
+                  </div>
+                </div>
+            
+                <!-- Підсумок ціни -->
+                <div id="total-price" style="font-weight: bold; margin-top: 10px; opacity: 0; transition: opacity 0.5s;"></div>
+            
+                <input type="hidden" name="cart_items" />
+<input type="hidden" name="cart_total" />
+<input type="hidden" name="to_email" />
+<div class="form-button">
+                  <button class="btn-ct" type="submit">Objednat pizzu</button>
+                </div>
+              </div>
+            </form>                
+          </div>
+          <div class="col-xl-7 col-lg-6 col-md-12 text-center">
+            <div class="reservation-pizza position-r wow fadeInRight">
+              <div class="book-leaf book-leaf-1">
+                <img src="images/leaf-1.png" alt="Leaf" />
+              </div>
+              <div class="book-leaf book-leaf-2">
+                <img src="images/leaf-2.png" alt="Leaf" />
+              </div>
+              <div class="book-leaf book-leaf-3">
+                <img src="images/leaf-3.png" alt="Leaf" />
+              </div>
+              <img
+                src="images/yuma/IMG_4690.PNG"
+                class="position-r"
+                alt="Pizza"
+              />
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="book-leaf-big wow fadeInRight animation-delay-5">
+          <img src="images/book-leaf.png" alt="Leaf" />
+        </div>
+      </section>
+      <!-- End Of Reservation Part -->
+
+    <!-- Start Of Footer -->
+    <footer>
+      <div class="footer ptb-100 bg-yellow position-r overflow-h">
+        <div class="footer-pattern-1 wow fadeInLeft animation-delay-5">
+        <img src="images/yuma/logo.svg" alt="logo" />
+        </div>
+        <div class="footer-pattern-2 wow fadeInRight animation-delay-5">
+        <img src="images/yuma/hra.png" alt="footer-pattern" />
+        </div>
+        <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-6 col-md-6 footer-box wow fadeInUp">
+          <h6 class="footer-title text-uppercase">Informace</h6>
+          <ul class="footer-menu">
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="blog-left.html">Menu</a></li>
+            <li><a href="about.html">Novinky</a></li>
+            <li><a href="our-menu.html">O nas</a></li>
+          </ul>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 footer-box wow fadeInUp">
+          <h6 class="footer-title text-uppercase">Kontakt</h6>
+          <ul class="footer-menu">
+            <li><a>Adresa</a></li>
+            <li><a
+              class="footer-map-link"
+              href="https://www.google.com/maps/place/Přátelství+180,+104+00+Praha+22-Uhříněves"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Přátelství 180<br />
+              104 00 Praha 22 – Uhříněves
+            </a></li>
+            <li> <a class="link mobile-menu-phone-link" href="tel:+420776800436"
+              >+420 606-250-600</a></li>
+          </ul>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 footer-box wow fadeInUp">
+          <h6 class="footer-title text-uppercase">Otevírací doba</h6>
+          <ul class="footer-menu">
+            <li><a>Po    11:00-21:30</a></li>
+            <li><a>Út    11:00-21:30</a></li>
+            <li><a>St    11:00-21:30</a></li>
+            <li><a>Čt    11:00-21:30</a></li>
+            <li><a>Pá    11:00-21:30</a></li>
+            <li><a>So    11:00-21:30</a></li>
+            <li><a>Ne    11:00-21:30</a></li>
+          </ul>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 footer-box wow fadeInUp">
+            <h6 class="footer-title text-uppercase">Sledujte nás na sociálních sítích</h6>
+            <ul class="footer-social">
+            <li>
+              <a href="#" class="facebook">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/yuma_pizza_cz?igsh=ajE1bWg1c21oNWJ4" class="instagram">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@yuma_pizza_?_t=ZM-8vcNNenySM3&_r=1" class="tiktok" target="_blank">
+                <img src="images/yuma/tiktok-icon-white-1-logo-svgrepo-com.svg" alt="TikTok" width="20" />
+                
+                </a>
+              </a>
+            </li>
+            </ul>
+            
+          
+          
+      <div class="copyright">
+        <div class="container">
+        <div class="text-center">
+          <p>
+          &#169; Všechna práva vyhrazena společnosti YU-MA Pizza © 2025
+          <a href="#">Templatescoder</a>
+          </p>
+        </div>
+        </div>
+      </div>
+      </footer>
+      <!-- End Of Footer -->
+
+    <!-- Start Of Search Popup -->
+    <div class="search-popup">
+      <div class="search-overlay"></div>
+      <div class="search-form">
+        <button class="close"></button>
+        <form>
+          <input
+            type="text"
+            name="search"
+            placeholder="What are you looking for?"
+            class="search-input"
+          />
+          <button type="submit">
+            <img src="images/search-icon-white.png" alt="Search Icon" />
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- End Of Search Popup -->
+
+<!-- Start Of Order Drawer -->
+<div class="cart-drawer">
+  <div class="bg-overlay"></div>
+  <div class="drawer-content">
+    <div class="w-100">
+      <div class="cart-header">
+        <h6 class="title text-uppercase">Objednávka</h6>
+        <button class="close"></button>
+      </div>
+      <div class="cart-list">
+        <div class="cart-list-inner">
+          <form class="book-form" id="order-form">
+            <div class="form-group">
+              <input
+                type="text"
+                name="customer_name"
+                class="form-control"
+                placeholder="Jméno*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="customer_email"
+                class="form-control"
+                placeholder="E-mail*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                name="customer_phone"
+                class="form-control"
+                placeholder="Telefon*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="pizza"
+                class="form-control"
+                placeholder="Druh pizzy*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="number"
+                name="quantity"
+                class="form-control"
+                placeholder="Počet kusů*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="customer_address"
+                class="form-control"
+                placeholder="Adresa doručení*"
+                required
+              />
+            </div>
+            <div class="form-button mt-3">
+              <button class="btn-ct" type="submit">Objednat pizzu</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-footer-des mt-3">
+          <p>Vaše údaje budou zpracovány pro doručení objednávky.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Of Order Drawer -->
+
+
+    <div class="points">
+      <div class="point" style="--duration: 50s; --name: p1; --color-num: 0.12;"></div>
+      <div class="point" style="--duration: 40s; --name: p2"></div>
+      <div class="point" style="--duration: 35s; --name: p3; --color-num: 0.10;"></div>
+      <div class="point" style="--duration: 20s; --name: p4"></div>
+      <div class="point" style="--duration: 60s; --name: p5: --color-num: 0.09;"></div>
+      <div class="point" style="--duration: 40s; --name: p6"></div>
+      <div class="point" style="--duration: 20s; --name: p7; --color-num: 0.07;"></div>
+      <div class="point" style="--duration: 70s; --name: p8"></div>
+      <div class="point" style="--duration: 80s; --name: p9; --color-num: 0.05;"></div>
+    </div>
+    <!-- .points -->
+    <script>
+      document.getElementById("order-form").addEventListener("submit", function (e) {
+        e.preventDefault(); // не перезавантажувати сторінку
+    
+        const form = e.target;
+        const orderData = {
+          name: form.name.value,
+          email: form.email.value,
+          phone: form.phone.value,
+          pizza: form.pizza.value,
+          quantity: form.quantity.value,
+          address: form.address.value,
+          time: new Date().toLocaleString(),
+        };
+    
+        localStorage.setItem("pizzaOrder", JSON.stringify(orderData));
+    
+        alert("Děkujeme! Vaše objednávka byla uložena.");
+    
+        form.reset(); // очистити форму
+      });
+    </script>
+
+<script>
+  document.querySelectorAll('.menu-item-title h5').forEach(el => {
+    const text = el.innerText.trim();
+    if (text.length <= 20) {
+      el.style.webkitLineClamp = "1"; // один рядок
+    } else {
+      el.style.webkitLineClamp = "2"; // два рядки
+    }
+  });
+</script>
+
+
+    
+    <!-- Start Of Js -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/yuma.js"></script>
+ 
+
+<!--owl.carousel.-->
+<script>
+  $(document).ready(function(){
+    $('.menu-slider').owlCarousel({
+      loop: true,
+      margin: 30, // акуратний відступ між картками
+      nav: true,
+      dots: false,
+      smartSpeed: 600,
+      responsive: {
+        0: {
+          items: 1,
+          margin: 10
+        },
+        600: {
+          items: 2,
+          margin: 20
+        },
+        900: {
+          items: 3,
+          margin: 25
+        },
+        1200: {
+          items: 4, // <-- тепер 4 картки замість 6
+          margin: 30
+        }
+      }
+    });
+  });
+  </script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // ========== Скрипт для форми ==========
+      const form = document.querySelector('.book-form');
+      const messageDiv = document.getElementById('form-message');
+    
+      if (form && messageDiv) {
+        form.addEventListener('submit', async function (event) {
+          event.preventDefault();
+    
+          const formData = new FormData(form);
+          const data = {
+            name: formData.get('name'),
+            email: formData.get('email'),
+            phone: formData.get('phone'),
+            pizza: formData.get('pizza'),
+            quantity: formData.get('quantity'),
+            address: formData.get('address'),
+          };
+    
+          try {
+            const response = await fetch('/send-order', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(data),
+            });
+    
+            if (response.ok) {
+              showMessage('Vaše objednávka byla úspěšně odeslána! Děkujeme!', 'success');
+              form.reset();
+            } else {
+              showMessage('Došlo k chybě při odesílání objednávky. Zkuste to prosím znovu.', 'error');
+            }
+          } catch (error) {
+            console.error('Chyba:', error);
+            showMessage('Došlo k chybě při odesílání objednávky. Zkuste to prosím znovu.', 'error');
+          }
+        });
+    
+        function showMessage(message, type) {
+          messageDiv.textContent = message;
+          messageDiv.style.display = 'block';
+          if (type === 'success') {
+            messageDiv.style.backgroundColor = '#d4edda';
+            messageDiv.style.color = '#155724';
+            messageDiv.style.border = '1px solid #c3e6cb';
+          } else {
+            messageDiv.style.backgroundColor = '#f8d7da';
+            messageDiv.style.color = '#721c24';
+            messageDiv.style.border = '1px solid #f5c6cb';
+          }
+          setTimeout(() => {
+            messageDiv.style.display = 'none';
+          }, 5000);
+        }
+      }
+    
+      // ========== Скрипт для додавання в кошик ==========
+      const buttons = document.querySelectorAll(".add-to-cart");
+      const cartCount = document.querySelector(".cart-count");
+    
+      function updateCartCount() {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        if (cartCount) {
+          cartCount.textContent = cart.length;
+        }
+      }
+    
+      buttons.forEach(button => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+    
+          const name = this.dataset.name;
+          const price = this.dataset.price;
+          const item = { name, price };
+    
+          const cart = JSON.parse(localStorage.getItem("cart")) || [];
+          cart.push(item);
+          localStorage.setItem("cart", JSON.stringify(cart));
+    
+          updateCartCount();
+    
+          alert(`${name} byla přidána do košíku!`);
+        });
+      });
+    
+      updateCartCount(); // Оновити кількість при завантаженні сторінки
+    });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const pizzaSelect = document.querySelector('select[name="pizza"]');
+        const quantityInput = document.querySelector('input[name="quantity"]');
+        const totalPriceDiv = document.getElementById('total-price');
+      
+        function updateTotalPrice() {
+          const pizzaText = pizzaSelect.value;
+          const quantity = parseInt(quantityInput.value) || 0;
+      
+          if (!pizzaText || quantity === 0) {
+            totalPriceDiv.style.opacity = 0;
+            return;
+          }
+      
+          const priceMatch = pizzaText.match(/(\d+)\s*Kč/);
+          if (priceMatch) {
+            const pricePerPizza = parseInt(priceMatch[1]);
+            const totalPrice = pricePerPizza * quantity;
+            totalPriceDiv.textContent = `Celková cena: ${totalPrice} Kč`;
+            totalPriceDiv.style.opacity = 1;
+          } else {
+            totalPriceDiv.style.opacity = 0;
+          }
+        }
+      
+        pizzaSelect.addEventListener('change', updateTotalPrice);
+        quantityInput.addEventListener('input', updateTotalPrice);
+      });
+      </script>
+      <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const readMoreButtons = document.querySelectorAll('.read-more');
+
+  readMoreButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const container = this.parentElement;
+      container.classList.toggle('expanded');
+
+      if (container.classList.contains('expanded')) {
+        this.textContent = '▲';
+        this.classList.add('rotate');
+      } else {
+        this.textContent = '▼';
+        this.classList.remove('rotate');
+      }
+    });
+  });
+});
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
+    const close = document.querySelector(".sidemenu-close");
+
+    toggle.addEventListener("click", function () {
+      menu.classList.toggle("menu-open");
+    });
+
+    close.addEventListener("click", function () {
+      menu.classList.remove("menu-open");
+    });
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function () {
+    const owl = $(".menu-slider");
+
+    owl.owlCarousel({
+      items: 1,
+      margin: 30,
+      loop: true,
+      nav: true,
+      dots: false,
+      navText: [
+        "<i class='fa fa-arrow-left'></i>",
+        "<i class='fa fa-arrow-right'></i>"
+      ],
+      responsive: {
+        0: { items: 1 },
+        768: { items: 2 },
+        992: { items: 3 }
+      },
+      onInitialized: moveMobileNav
+    });
+
+    function moveMobileNav() {
+      if (window.innerWidth <= 767) {
+        setTimeout(function () {
+          const nav = $('.menu-slider .owl-nav');
+          if (nav.length) {
+            $('.custom-owl-nav').html(nav);
+          }
+        }, 100); // трішки зачекати, поки owl створить стрілки
+      }
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll(".product-image");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+
+    images.forEach(img => observer.observe(img));
+  });
+</script>
+
+  
+<script>
+  $(document).ready(function () {
+    $(".menu-toggle, .sidemenu-close").click(function () {
+      $(".menu").slideToggle();
+      $(".dropdown-content").slideUp(200);
+      $(".opener").removeClass("active");
+    });
+  });
+</script>
+
+<!-- ✅ Виправлені підключення JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/yuma.js"></script>
+
+<script>
+  $(document).ready(function () {
+    if ($(".menu-slider").length) {
+      $(".menu-slider").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: false,
+        smartSpeed: 600,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 2 },
+          900: { items: 3 },
+          1200: { items: 4 }
+        }
+      });
+    }
+  });
+</script>
+
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("RDC_c3eh1LPepEWO_");
+
+    const form = document.querySelector(".book-form");
+    const messageDiv = document.getElementById("form-message");
+
+    if (form && messageDiv) {
+      // додати приховане поле to_email, якщо ще немає
+      if (!form.querySelector("input[name='to_email']")) {
+        const hiddenInput = document.createElement("input");
+        hiddenInput.type = "hidden";
+        hiddenInput.name = "to_email";
+        form.appendChild(hiddenInput);
+      }
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const toEmailInput = form.querySelector("input[name='to_email']");
+        if (toEmailInput) {
+          toEmailInput.value = form.email.value;
+        }
+
+        emailjs.sendForm("service_wng239p", "template_1jsaunn", form)
+          .then(() => {
+            showMessage("Vaše objednávka byla úspěšně odeslána! Děkujeme!", "success");
+            form.reset();
+          }, (error) => {
+            console.error("EmailJS chyba:", error);
+            showMessage("Došlo k chybě při odesílání objednávky. Zkuste to prosím znovu.", "error");
+          });
+      });
+
+      function showMessage(message, type) {
+        messageDiv.textContent = message;
+        messageDiv.style.display = "block";
+        messageDiv.style.backgroundColor = type === "success" ? "#d4edda" : "#f8d7da";
+        messageDiv.style.color = type === "success" ? "#155724" : "#721c24";
+        messageDiv.style.border = type === "success" ? "1px solid #c3e6cb" : "1px solid #f5c6cb";
+        setTimeout(() => {
+          messageDiv.style.display = "none";
+        }, 5000);
+      }
+    }
+  });
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("RDC_c3eh1LPepEWO_");
+
+    const form = document.querySelector(".book-form");
+    const messageDiv = document.getElementById("form-message");
+
+    if (form && messageDiv) {
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const pizza = form.pizza.value;
+        const quantity = parseInt(form.quantity.value) || 0;
+        const match = pizza.match(/(\d+)\s*Kč/);
+        const price = match ? parseInt(match[1]) : 0;
+        const total = price * quantity;
+
+        const items = `Pizza: ${pizza}\nPočet kusů: ${quantity}`;
+
+        form.querySelector('input[name="cart_items"]').value = items;
+        form.querySelector('input[name="cart_total"]').value = total;
+        form.querySelector('input[name="to_email"]').value = form.customer_email.value;
+
+        emailjs.sendForm("service_wng239p", "template_1jsaunn", form)
+          .then(() => {
+            showMessage("Vaše objednávka byla úspěšně odeslána! Děkujeme!", "success");
+            form.reset();
+          }, (error) => {
+            console.error("EmailJS chyba:", error);
+            showMessage("Došlo k chybě při odesílání objednávky. Zkuste to prosím znovu.", "error");
+          });
+      });
+
+      function showMessage(message, type) {
+        messageDiv.textContent = message;
+        messageDiv.style.display = "block";
+        messageDiv.style.backgroundColor = type === "success" ? "#d4edda" : "#f8d7da";
+        messageDiv.style.color = type === "success" ? "#155724" : "#721c24";
+        messageDiv.style.border = type === "success" ? "1px solid #c3e6cb" : "1px solid #f5c6cb";
+        setTimeout(() => {
+          messageDiv.style.display = "none";
+        }, 5000);
+      }
+    }
+  });
+</script>
+<script>
+  function toggleMobileMenu() {
+    document.getElementById("mobileMenu").classList.toggle("open");
+  }
+</script>
+</body>
+
+</html>
